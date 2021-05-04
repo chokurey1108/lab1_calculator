@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CalculatorController {
 
     private final CalculatorService calculatorService;
-
+    //suma de 2 numeros
     @GetMapping(value = Constants.SUM, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Double> sum(
             @RequestParam(name = Constants.NUMBER_1) Double number1,
